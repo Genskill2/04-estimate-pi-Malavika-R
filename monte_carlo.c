@@ -3,7 +3,21 @@
 #include <stdio.h>
 #include <math.h>
 
-float mc_pi(int);
+float mc_pi(int darts){
+  float c=0.0;
+  
+  for(int i=0;i<x;i++){
+  float x=frandom();
+  float y=frandom();
+  float d=sqrt((x*x)+(y*y));
+    
+    if(d<=1){
+      c++;
+    }
+  }
+  float ans= 4.0*(c/(float)x);
+  return (ans);
+}
 
 float frandom() {
   long int q = random();
