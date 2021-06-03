@@ -14,7 +14,7 @@ x=frandom();
 y=frandom();
 r=sqrt(x*x+y*y);
 if(r<=1)
-count++;
+ count++;
 }
 return 4.0*(count/(float)darts);
 }
