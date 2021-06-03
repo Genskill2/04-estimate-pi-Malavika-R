@@ -7,9 +7,9 @@ float mc_pi(int darts){
   float c=0.0;
   
   for(int i=0;i<x;i++){
-  float x=frandom();
-  float y=frandom();
-  float d=sqrt((x*x)+(y*y));
+    float x=frandom();
+    float y=frandom();
+    float d=sqrt((x*x)+(y*y));
     
     if(d<=1){
       c++;
