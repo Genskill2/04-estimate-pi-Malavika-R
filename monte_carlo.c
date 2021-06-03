@@ -5,18 +5,18 @@
 
 float mc_pi(int darts)
 {
-  int c=0;
-  float x,y;
-  float d;
-  for(int i=0;i<darts;++i)
-  {
-    x=frandom();
-    y=frandom();
-    d=sqrt((x*x)+(y*y));
-    if(d<=1)
-      c++;
-  }
-  return 4.0*(c/(float)darts);
+int count=0;
+float x,y;
+float r;
+for(int i=0;i<darts;++i)
+{
+x=frandom();
+y=frandom();
+r=sqrt(x*x+y*y);
+if(r<=1)
+count++;
+}
+return 4.0*(count/(float)darts);
 }
 
 float frandom() {
