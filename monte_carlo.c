@@ -4,19 +4,18 @@
 #include <math.h>
 
 float mc_pi(int darts){
-  float c=0.0;
-  
+  int c=0;
+  float x,y;
+  float d;
   for(int i=0;i<x;i++){
-    float x=frandom();
-    float y=frandom();
-    float d=sqrt((x*x)+(y*y));
-    
+    x=frandom();
+    y=frandom();
+    d=sqrt((x*x)+(y*y));
     if(d<=1){
       c++;
     }
   }
-  float ans= 4.0*(c/(float)x);
-  return (ans);
+  return 4.0*(c/(float)darts);
 }
 
 float frandom() {
