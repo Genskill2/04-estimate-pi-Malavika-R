@@ -3,17 +3,18 @@
 #include <stdio.h>
 #include <math.h>
 
-float mc_pi(int darts){
+float mc_pi(int darts)
+{
   int c=0;
   float x,y;
   float d;
-  for(int i=0;i<x;i++){
+  for(int i=0;i<darts;++i)
+  {
     x=frandom();
     y=frandom();
     d=sqrt((x*x)+(y*y));
-    if(d<=1){
+    if(d<=1)
       c++;
-    }
   }
   return 4.0*(c/(float)darts);
 }
