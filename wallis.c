@@ -10,7 +10,7 @@ float wallis_pi(int n)
   {
     result = result*((4*i*i)/((4*i*i)-1));
   }
-  return result;
+  return 2.0*result;
 }
 
 int main(void) {
